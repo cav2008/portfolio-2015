@@ -1,0 +1,356 @@
+@import "variables.less";
+
+// TYPOLOGY
+// --------------------------------------------
+h1 {
+  font-family: @ptBold;
+}
+
+h2 {
+  font-family: @ptBold;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media(max-width: 360px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-family: @ptBold;
+  font-size: 24px;
+}
+
+h4 {
+  font-family:@ptBold;
+  font-size: 24px;
+}
+
+P {
+  font-size: 1.2em;
+}
+
+// GLOBAL STYLES
+// ---------------------------------------------
+
+
+// HEADER
+// ---------------------------------------------
+header {
+  background: #3F3D40;
+  padding: 20px 0;
+
+  h1 {
+    color: #49D3E6;
+    margin: 0;
+  }
+
+  @media(max-width: 572px) {
+    h1.name {
+      width: 100%;
+    }
+  }
+
+  h3.job-role {
+    margin: 0;
+    padding: 0;
+    color: #bfbfbf;
+  }
+
+  ul.menu-links {
+    position: relative;
+    top: 10px;
+
+    > li {
+      float: right;
+
+      > a {
+        color: #bfbfbf;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right:0;
+        margin-left: 20px;
+        border-radius: 0;
+      }
+
+      > a:hover {
+        background-color: #3F3D40;
+        color: #EDEDED;
+        border-bottom: 1px solid #bfbfbf;
+      }
+    }
+
+    li.open {
+      a.drop-main {
+        background-color: #3F3D40;
+      }
+
+      ul.drop-box {
+        border-radius: 0;
+        left: 18px;
+      }
+    }
+  }
+
+  @media(max-width: 572px) {
+    ul.menu-links {
+      display: none;
+    }
+  }
+}
+
+// HERO UNIT
+// --------------------------------------------
+section.intro {
+  background: linear-gradient(top, #3F3D40, #373638);
+  background: -webkit-linear-gradient(top, #3F3D40, #373638);
+  background: -moz-linear-gradient(top, #3F3D40, #373638);
+  background: -ms-linear-gradient(top, #3F3D40, #373638);
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  .welcome-text {
+    text-align: center;
+
+    h1 {
+      color: white;
+      font-size: 69px;
+    }
+
+    p {
+      color: white;
+      padding: 0 100px;
+    }
+
+    a.btn {
+      margin-top: 50px;
+    }
+
+    @media(max-width: 612px) {
+      p {
+        padding: 0;
+      }
+    }
+  }
+}
+
+// JAVA CONTENT
+// --------------------------------------------
+
+//Title
+section.app {
+  border-top: 15px solid #04B6DC;
+  background-color: #8BDAFB;
+}
+
+// general
+section.java {
+  background-color: #8BDAFB;
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .text-wrapper {
+    text-align: center;
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+// upper and downer and hangman
+.uppers-downers img, .hangman img {
+  padding: 0;
+
+  -webkit-box-shadow: 11px 11px 11px -2px rgba(0,0,0,0.45);
+  -moz-box-shadow: 11px 11px 11px -2px rgba(0,0,0,0.45);
+  -ms-box-shadow: 11px 11px 11px -2px rgba(0,0,0,0.45);
+  box-shadow: 11px 11px 11px -2px rgba(0,0,0,0.45);
+}
+
+.uppers-downers img:hover, .hangman img:hover {
+  opacity: .9;
+  -webkit-transform: scale(1.10,1.12);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1.10,1.12);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
+  -ms-transform: scale(1.10,1.12);
+  -ms-transition-timing-function: ease-out;
+  -ms-transition-duration: 250ms;
+  position: relative;
+  z-index: 99;
+}
+
+.uppers-downers .text-wrapper, .hangman .text-wrapper {
+  display: inline-block;
+}
+
+// WEB + CAROUSEL
+// --------------------------------------------
+section.web {
+  border-top: 15px solid #BFC2C7;
+  text-align: center;
+  background-color: #ECF0F1;
+
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+
+// carousel
+section.portfolio-slider {
+  background-color: #ECF0F1;
+  padding-bottom: 50px;
+
+  #myCarousel {
+    width: 80%;
+    margin: 0 auto;
+    border-left: 8px solid black;
+    border-right: 8px solid black;
+  }
+
+  @media(max-width: 991px) {
+
+    #myCarousel {
+      width: 100%;
+      margin: 0 0 50px 0;
+      border-left: 3px solid black;
+      border-right: 3px solid black;
+    }
+  }
+
+  .carousel-image {
+    margin: 0 auto;
+  }
+}
+
+.carousel-indicators {
+  li {
+    border-color: #428bca;
+  }
+
+  li.active {
+    background-color: #428bca;
+  }
+}
+
+.carousel-caption {
+  h4 {
+    text-shadow: none;
+  }
+}
+
+// SKILLS
+// -------------------------------------------
+section.skills {
+  border-top: 15px solid #16A086;
+  background-color: #31B4AC;
+
+  .logos {
+    text-align: center;
+
+    div {
+      display: inline-block;
+    }
+
+    i {
+      margin: 39px;
+      float: left;
+    }
+
+    @media(max-width: 572px) {
+      i {
+        margin: 27px;
+      }
+    }
+
+    i:hover {
+      cursor: pointer;
+    }
+
+    .droid:hover {
+      color: #A4C739;
+    }
+
+    .window:hover {
+      color: #6DC2E9;
+    }
+
+    .mac:hover {
+      color: white;
+    }
+
+    .ubuntu:hover {
+      color: #DD4814;
+    }
+
+    .html5:hover {
+      color: #ec6231;
+    }
+
+    .css3:hover {
+      color: #1572B7;
+    }
+
+    .js:hover {
+      color: #F0DB4F;
+    }
+
+    .php:hover {
+      color: #475292;
+    }
+
+    .java:hover {
+      color: #F20807;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+
+// FOOTER
+// -------------------------------------------
+footer {
+  background: linear-gradient(top, #262729, #1C1D1F);
+  background: -webkit-linear-gradient(top, #262729, #1C1D1F);
+  background: -moz-linear-gradient(top, #262729, #1C1D1F);
+  background: -ms-linear-gradient(top, #262729, #1C1D1F);
+
+  div.icon-wrapper {
+    text-align: center;
+
+    h4 {
+      margin-top: 25px;
+      color: #bfbfbf;
+    }
+
+    h4.mob-number {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    img {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    p.copyright, .copyright > a {
+      color: #3F3D40;
+      font-size: 12px;
+    }
+  }
+}

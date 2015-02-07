@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "pt san";
+  src: url("../webfonts/ptsans_regular_macroman/PTS55F-webfont.eot") format('eot');
+  src: url("../webfonts/ptsans_regular_macroman/PTS55F-webfont.ttf") format('truetype');
+  src: url("../webfonts/ptsans_regular_macroman/PTS55F-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: "pt san bold";
+  src: url("../webfonts/ptsans_bold_macroman/PTS75F-webfont.eot") format('eot');
+  src: url("../webfonts/ptsans_bold_macroman/PTS75F-webfont.ttf") format('truetype');
+  src: url("../webfonts/ptsans_bold_macroman/PTS75F-webfont.woff") format('woff');
+}

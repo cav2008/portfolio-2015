@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "pt san";
+  src: url("../webfonts/ptsans_regular_macroman/PTS55F-webfont.eot") format('eot');
+  src: url("../webfonts/ptsans_regular_macroman/PTS55F-webfont.ttf") format('truetype');
+  src: url("../webfonts/ptsans_regular_macroman/PTS55F-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: "pt san bold";
+  src: url("../webfonts/ptsans_bold_macroman/PTS75F-webfont.eot") format('eot');
+  src: url("../webfonts/ptsans_bold_macroman/PTS75F-webfont.ttf") format('truetype');
+  src: url("../webfonts/ptsans_bold_macroman/PTS75F-webfont.woff") format('woff');
+}
+h1 {
+  font-family: "pt san bold", helvetica, Arial, Sans-Serif;
+}
+h2 {
+  font-family: "pt san bold", helvetica, Arial, Sans-Serif;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+}
+@media (max-width: 360px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+h3 {
+  font-family: "pt san bold", helvetica, Arial, Sans-Serif;
+  font-size: 24px;
+}
+h4 {
+  font-family: "pt san bold", helvetica, Arial, Sans-Serif;
+  font-size: 24px;
+}
+P {
+  font-size: 1.2em;
+}
+header {
+  background: #3F3D40;
+  padding: 20px 0;
+}
+header h1 {
+  color: #49D3E6;
+  margin: 0;
+}
+@media (max-width: 572px) {
+  header h1.name {
+    width: 100%;
+  }
+}
+header h3.job-role {
+  margin: 0;
+  padding: 0;
+  color: #bfbfbf;
+}
+header ul.menu-links {
+  position: relative;
+  top: 10px;
+}
+header ul.menu-links > li {
+  float: right;
+}
+header ul.menu-links > li > a {
+  color: #bfbfbf;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 20px;
+  border-radius: 0;
+}
+header ul.menu-links > li > a:hover {
+  background-color: #3F3D40;
+  color: #EDEDED;
+  border-bottom: 1px solid #bfbfbf;
+}
+header ul.menu-links li.open a.drop-main {
+  background-color: #3F3D40;
+}
+header ul.menu-links li.open ul.drop-box {
+  border-radius: 0;
+  left: 18px;
+}
+@media (max-width: 572px) {
+  header ul.menu-links {
+    display: none;
+  }
+}
+section.intro {
+  background: linear-gradient(top, #3f3d40, #373638);
+  background: -webkit-linear-gradient(top, #3f3d40, #373638);
+  background: -moz-linear-gradient(top, #3f3d40, #373638);
+  background: -ms-linear-gradient(top, #3f3d40, #373638);
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+section.intro .welcome-text {
+  text-align: center;
+}
+section.intro .welcome-text h1 {
+  color: white;
+  font-size: 69px;
+}
+section.intro .welcome-text p {
+  color: white;
+  padding: 0 100px;
+}
+section.intro .welcome-text a.btn {
+  margin-top: 50px;
+}
+@media (max-width: 612px) {
+  section.intro .welcome-text p {
+    padding: 0;
+  }
+}
+section.app {
+  border-top: 15px solid #04B6DC;
+  background-color: #8BDAFB;
+}
+section.java {
+  background-color: #8BDAFB;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+section.java h3 {
+  font-size: 30px;
+}
+section.java .text-wrapper {
+  text-align: center;
+}
+section.java .text-wrapper p {
+  font-size: 1.2em;
+}
+.uppers-downers img,
+.hangman img {
+  padding: 0;
+  -webkit-box-shadow: 11px 11px 11px -2px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 11px 11px 11px -2px rgba(0, 0, 0, 0.45);
+  -ms-box-shadow: 11px 11px 11px -2px rgba(0, 0, 0, 0.45);
+  box-shadow: 11px 11px 11px -2px rgba(0, 0, 0, 0.45);
+}
+.uppers-downers img:hover,
+.hangman img:hover {
+  opacity: .9;
+  -webkit-transform: scale(1.1, 1.12);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1.1, 1.12);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
+  -ms-transform: scale(1.1, 1.12);
+  -ms-transition-timing-function: ease-out;
+  -ms-transition-duration: 250ms;
+  position: relative;
+  z-index: 99;
+}
+.uppers-downers .text-wrapper,
+.hangman .text-wrapper {
+  display: inline-block;
+}
+section.web {
+  border-top: 15px solid #BFC2C7;
+  text-align: center;
+  background-color: #ECF0F1;
+}
+section.web p {
+  margin-bottom: 50px;
+}
+section.portfolio-slider {
+  background-color: #ECF0F1;
+  padding-bottom: 50px;
+}
+section.portfolio-slider #myCarousel {
+  width: 80%;
+  margin: 0 auto;
+  border-left: 8px solid black;
+  border-right: 8px solid black;
+}
+@media (max-width: 991px) {
+  section.portfolio-slider #myCarousel {
+    width: 100%;
+    margin: 0 0 50px 0;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+  }
+}
+section.portfolio-slider .carousel-image {
+  margin: 0 auto;
+}
+.carousel-indicators li {
+  border-color: #428bca;
+}
+.carousel-indicators li.active {
+  background-color: #428bca;
+}
+.carousel-caption h4 {
+  text-shadow: none;
+}
+section.skills {
+  border-top: 15px solid #16A086;
+  background-color: #31B4AC;
+}
+section.skills .logos {
+  text-align: center;
+}
+section.skills .logos div {
+  display: inline-block;
+}
+section.skills .logos i {
+  margin: 39px;
+  float: left;
+}
+@media (max-width: 572px) {
+  section.skills .logos i {
+    margin: 27px;
+  }
+}
+section.skills .logos i:hover {
+  cursor: pointer;
+}
+section.skills .logos .droid:hover {
+  color: #A4C739;
+}
+section.skills .logos .window:hover {
+  color: #6DC2E9;
+}
+section.skills .logos .mac:hover {
+  color: white;
+}
+section.skills .logos .ubuntu:hover {
+  color: #DD4814;
+}
+section.skills .logos .html5:hover {
+  color: #ec6231;
+}
+section.skills .logos .css3:hover {
+  color: #1572B7;
+}
+section.skills .logos .js:hover {
+  color: #F0DB4F;
+}
+section.skills .logos .php:hover {
+  color: #475292;
+}
+section.skills .logos .java:hover {
+  color: #F20807;
+}
+section.skills h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+footer {
+  background: linear-gradient(top, #262729, #1c1d1f);
+  background: -webkit-linear-gradient(top, #262729, #1c1d1f);
+  background: -moz-linear-gradient(top, #262729, #1c1d1f);
+  background: -ms-linear-gradient(top, #262729, #1c1d1f);
+}
+footer div.icon-wrapper {
+  text-align: center;
+}
+footer div.icon-wrapper h4 {
+  margin-top: 25px;
+  color: #bfbfbf;
+}
+footer div.icon-wrapper h4.mob-number {
+  margin-top: 10px;
+  font-size: 18px;
+}
+footer div.icon-wrapper img {
+  display: inline-block;
+  margin: 10px;
+}
+footer div.icon-wrapper p.copyright,
+footer div.icon-wrapper .copyright > a {
+  color: #3F3D40;
+  font-size: 12px;
+}
